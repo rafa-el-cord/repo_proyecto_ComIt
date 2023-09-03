@@ -1,0 +1,85 @@
+.homeHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    /* resolver Mi Perfil quedando abajo en pantalla celu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.iconoPerfil {
+    display: flex;
+    max-width: 50px;
+}
+
+.itemsNav {
+    display: flex;
+    padding: 15px;
+}
+
+.categoriasHome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.itemsCategoriasHome {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.itemsCategoriasHome img {
+    max-width: 300px;
+    max-height: 300px;
+    /* tratar de que las imagenes disminuyan un toque si la pantalla es de celu */
+}
+
+.iconosGuardarFavoritar img {
+    max-width: 40px;
+}
+
+.perfilForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    max-width: 300px;
+}
+
+.perfilHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconoHome {
+    display: flex;
+    max-width: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    /* resolver: elementos nav están muy a la derecha  */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul {
+    list-style: none;
+}
