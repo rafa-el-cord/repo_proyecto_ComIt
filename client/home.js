@@ -1,7 +1,14 @@
+const actualidadUL = document.getElementById("actualidadJs")
+
 fetch("/api/temas")
 .then(response => response.json())
 .then(data => {
     const { actualidad, musica, meme } = data;
+    actualidad.forEach(element => {
+        let li = document.createElement('li');
+        li.innerText = ;
+        ulElement.appendChild(li);
+    });
 })
 .catch(error => console.log(error));
 
