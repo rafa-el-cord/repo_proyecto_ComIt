@@ -1,14 +1,21 @@
+fetch("/api/temas")
+.then(response => response.json())
+.then(data => {
+    const { actualidad, musica, meme } = data;
+})
+.catch(error => console.log(error));
 
 
 
 
-/* código para hacer una lista de favoritos: */
+/* código para hacer una lista de favoritos: 
 
 agregarAfavoritosJs
 
 document.addEventListener("DOMContentLoaded", function () {
     const addToFavoritesButton = document.getElementById("agregarAfavoritosJs");
-    const listaFavoritos = document.getElementById("listaFavoritos");   /* crear id listaFavoritos en ul dentro del html Favoritos)  */
+    const listaFavoritos = document.getElementById("listaFavoritos");   
+    crear id listaFavoritos en ul dentro del html Favoritos)  
 
     agregarAfavoritosJsButton.addEventListener("click", function () {
         const listItem = document.createElement("li");
@@ -16,3 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
         listaFavoritos.appendChild(listItem);
     });
 });
+*/ 
