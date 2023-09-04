@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOMBRE DE LA APP</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section>
         <header class="homeHeaderContainer">
-            <h1>NOMBRE</h1>
+            <p>NOMBRE</p>
             <nav>
                 <ul>
                     <a href="concluidos.html">
@@ -33,29 +33,22 @@
         </header>
 
         <article>
-            <h1>Actualidades</h1>
+            <p class="titulos">La app para practicar inglés a tu ritmo, con temas relajados
+                y de tu interés.</p>
+        </article>
+
+        <article>
+            <h1 class="titulos">Actualidades</h1>
             <ul class="categoriasHome">
-                <li>
+                <li> <!-- A DESARROLLAR: cuando el usuario haya terminado una actividad, se 
+                    sumaría un <div> a todos los <li>, con el ícono de CHECK para marcar la tarea como 
+                        terminada. Lo mismo con otro ícono que indique que la tarea está en curso  -->
                     <div class="itemsCategoriasHome">
-                        <a href=""><img src="imagenes/india.jpg" title="India launches mission to Sun"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
                         <a href="">
-                            <img src="imagenes/guardar.png">
-                        </a>
-                        <a href="">
-                            <img src="imagenes/favoritar.png" class="iconos"> 
+                            <img src="imagenes/india.jpg" title="India launches mission to Sun">
                         </a>
                     </div>
-                </li>
-                <li>
-                    <div class="itemsCategoriasHome">
-                        <a href=""><img src="imagenes/brics.jpg" title="Argentina admited to BRICs"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
-                        <a href="">
-                            <img src="imagenes/guardar.png"> 
-                        </a>
+                    <div class="iconoFavoritar">
                         <a href="">
                             <img src="imagenes/favoritar.png" class="iconos">
                         </a>
@@ -63,12 +56,23 @@
                 </li>
                 <li>
                     <div class="itemsCategoriasHome">
-                        <a href=""><img src="imagenes/river.jpg" title="River's formation to face Vélez"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
                         <a href="">
-                            <img src="imagenes/guardar.png">
+                            <img src="imagenes/brics.jpg" title="Argentina admited to BRICs">
                         </a>
+                    </div>
+                    <div class="iconoFavoritar">
+                        <a href="">
+                            <img src="imagenes/favoritar.png" class="iconos">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="itemsCategoriasHome">
+                        <a href="">
+                            <img src="imagenes/river.jpg" title="River's formation to face Vélez">
+                        </a>
+                    </div>
+                    <div class="iconoFavoritar">
                         <a href="">
                             <img src="imagenes/favoritar.png">
                         </a>
@@ -78,29 +82,15 @@
         </article>
 
         <article>
-            <h1>Memes</h1>
+            <h1 class="titulos">Memes</h1>
             <ul class="categoriasHome">
                 <li>
                     <div class="itemsCategoriasHome">
-                        <a href=""><img src="imagenes/violin.jpeg" title="A giant violin!"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
                         <a href="">
-                            <img src="imagenes/guardar.png">
-                        </a>
-                        <a href="">
-                            <img src="imagenes/favoritar.png">
+                            <img src="imagenes/violin.jpeg" title="A giant violin!">
                         </a>
                     </div>
-                </li>
-                <li>
-                    <div class="itemsCategoriasHome">
-                        <a href=""><img src="imagenes//ringBear.jpeg" title="Bear or bear?!"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
-                        <a href="">
-                            <img src="imagenes/guardar.png">
-                        </a>
+                    <div class="iconoFavoritar">
                         <a href="">
                             <img src="imagenes/favoritar.png">
                         </a>
@@ -108,12 +98,23 @@
                 </li>
                 <li>
                     <div class="itemsCategoriasHome">
-                        <a href=""><img src="imagenes/cinema.jpeg" title="Snacks at the cinema"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
                         <a href="">
-                            <img src="imagenes/guardar.png">
+                            <img src="imagenes//ringBear.jpeg" title="Bear or bear?!">
                         </a>
+                    </div>
+                    <div class="iconoFavoritar">
+                        <a href="">
+                            <img src="imagenes/favoritar.png">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="itemsCategoriasHome">
+                        <a href="">
+                            <img src="imagenes/cinema.jpeg" title="Snacks at the cinema">
+                        </a>
+                    </div>
+                    <div class="iconoFavoritar">
                         <a href="">
                             <img src="imagenes/favoritar.png">
                         </a>
@@ -123,16 +124,15 @@
         </article>
 
         <article>
-            <h1>Música</h1>
+            <h1 class="titulos">Música</h1>
             <ul class="categoriasHome">
                 <li>
                     <div class="itemsCategoriasHome">
-                        <a href=""></a><img src="imagenes/weeknd.jpg" title="Blinding Lights"></a>
-                    </div>
-                    <div class="iconosGuardarFavoritar">
                         <a href="">
-                            <img src="imagenes/guardar.png">
+                            <img src="imagenes/weeknd.jpg" title="Blinding Lights">
                         </a>
+                    </div>
+                    <div class="iconoFavoritar">
                         <a href="">
                             <img src="imagenes/favoritar.png">
                         </a>
@@ -140,29 +140,27 @@
                 </li>
                 <li>
                     <div class="itemsCategoriasHome">
-                        <a href=""></a><img src="imagenes/miley.jpg" title="Flowers"></a>
+                        <a href="">
+                            <img src="imagenes/miley.jpg" title="Flowers">
+                        </a>
                     </div>
-                        <div class="iconosGuardarFavoritar">
-                            <a href="">
-                                <img src="imagenes/guardar.png">
-                            </a>
-                            <a href="">
-                                <img src="imagenes/favoritar.png">
-                            </a>
-                        </div>
+                    <div class="iconoFavoritar">
+                        <a href="">
+                            <img src="imagenes/favoritar.png">
+                        </a>
+                    </div>
                 </li>
                 <li>
                     <div class="itemsCategoriasHome">
-                        <a href=""></a><img src="imagenes/beatles.jpg" title="Here comes the sun"></a>
-                        </div>
-                        <div class="iconosGuardarFavoritar">
-                            <a href="">
-                                <img src="imagenes/guardar.png">
-                            </a>
-                            <a href="">
-                                <img src="imagenes/favoritar.png">
-                            </a>
-                        </div>
+                        <a href="">
+                            <img src="imagenes/beatles.jpg" title="Here comes the sun">
+                        </a>
+                    </div>
+                    <div class="iconoFavoritar">
+                        <a href="">
+                            <img src="imagenes/favoritar.png">
+                        </a>
+                    </div>
                 </li>
             </ul>
         </article>
@@ -177,6 +175,8 @@
             </ul>
         </footer>
     </section>
+
+    <script src="home.js"></script>
 
 </body>
 

@@ -4,25 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Mi Perfil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <header class="perfilHeaderContainer">
-    <h1>Mi Perfil</h1>
+    <h2 class="titulos">Mi Perfil</h2>
     <a href="home.html"><img src="imagenes/home.png" class="iconoHome"></a>
 </header>
 
 <body>
-    <form action="" method="" class="perfilForm">
-        <input type="text" placeholder="nombre completo">
-        <input type="email" placeholder="e-mail">
-        <input type="tel" placeholder="teléfono">
-        <input type="password" placeholder="Contraseña">
-        <div class="container_submit">
-            <button class="button button_green">Actualizar</button>
-        </div>
-    </form>
+    <div>
+        <section>
+            <form action="" method="" class="perfilForm" id="actualizarFormJs">
+                <input type="text" name="nombre" placeholder="Mi nombre">
+                <input type="text" name="apodo" placeholder="Mi apodo">
+                <input type="email" name="email" placeholder="e-mail">
+                <input type="tel" name="telefono" placeholder="teléfono">
+                <input type="password" placeholder="Contraseña">
+                <div class="container_submit">
+                    <button>Actualizar</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <ul id="formJs"></ul>
+        </section>
+    </div>
+    
+    <script src="perfil.js"></script>
+
 </body>
 
 </html>
