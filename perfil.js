@@ -1,6 +1,8 @@
 const ulElement = document.getElementById("formJs");
 const formElement = document.getElementById("actualizarFormJs");
 
+
+/*
 function actualizarListaDeUsuarios(){
     ulElement.innerHTML = "";
     usuarios.forEach(function(usuario){
@@ -23,3 +25,5 @@ formElement.addEventListener('submit', function(event){
 });
 
 actualizarListaDeUsuarios();
+
+*/
