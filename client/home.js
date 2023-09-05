@@ -1,54 +1,38 @@
-const actualidadUL = document.getElementById("actualidadJs");
+const actualidadUL = document.getElementById("actualidadJs"); // linkea js y html
 
-fetch("/api/temas")
-.then(response => response.json())
-.then(data => {
-    const { actualidad, musica, meme } = data;
-    actualidad.forEach(element => {
-        const li = document.createElement('li');
-        const elementosDiv = document.createElement('div');
-        itemsDiv.classList.add('itemsCategoriasHome');
-
-        const a = document.createElement('a');
-        a.href = item
-        li.innerText = ;
-        ulElement.appendChild(li);
-    });
-})
-.catch(error => console.log(error));
-
-
-/* código CHAT
-// Obtén una referencia al elemento ul
-const actualidadUL = document.getElementById("actualidadJs");
-
-// Realiza una solicitud Fetch a tu API para obtener los datos
-fetch("/api/temas")
+fetch("/api/temas")                                       // Solicitud Fetch al API para obtener los datos:
   .then(response => response.json())
   .then(data => {
-    const { actualidad } = data;
+    const { actualidad, musica, meme } = data;
 
-    // Recorre los datos de "actualidad" y crea elementos li para cada uno
-    actualidad.forEach(item => {
-      // Crea un elemento li
-      const li = document.createElement('li');
+    actualidad.forEach(element => {   
+                                                          // Recorre los datos de "actualidad" y crea elementos li para cada uno
+      const li = document.createElement('li');            // Crea li
+     
+      const elementsDiv = document.createElement('div');  // Crea div
+      elementsDiv.classList.add('itemsCategoriasHome');   // Agrega la clase "itemsCategoriasHome" al div
+      
+      const a = document.createElement('a');              // Crea enlace con imagen, dentro de div
+      a.href = "".url                                     // Crea el hipervínculo. VER "" si está bien, ya que aún no tengo el hipervínculo.
+      
+      const img = document.createElement('img');          // Crea img
+      img.src = "imagenes/india.jpg".imagen;              // Agrega src al img
+      img.title = "India launches mission to Sun".titulo; // Agrega el title a img
+      a.appendChild(img);                                 // Agrega la imagen al hipervínculo
+      itemsDiv.appendChild(a);                            // Agrega el enlace al div "itemsCategoriasHome"
 
-      // Crea un div con la clase "itemsCategoriasHome"
-      const itemsDiv = document.createElement('div');
-      itemsDiv.classList.add('itemsCategoriasHome');
 
-      // Crea un enlace dentro del div con la imagen
-      const a = document.createElement('a');
-      a.href = item.url; // Reemplaza "item.url" con la URL correcta
-      const img = document.createElement('img');
-      img.src = item.imagen; // Reemplaza "item.imagen" con la URL correcta
-      img.title = item.titulo; // Reemplaza "item.titulo" con el título correcto
+      li.innerText = ;
+      ulElement.appendChild(li);
+    });
 
-      // Agrega la imagen al enlace
-      a.appendChild(img);
 
-      // Agrega el enlace al div "itemsCategoriasHome"
-      itemsDiv.appendChild(a);
+  })
+  .catch(error => console.log(error));
+
+
+/* código 
+          
 
       // Crea un div con la clase "iconoFavoritar"
       const iconoDiv = document.createElement('div');
