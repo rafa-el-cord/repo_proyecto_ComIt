@@ -5,8 +5,7 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
   .then(data => {
     const { actualidad, musica, meme } = data;
 
-    actualidad.forEach(element => {   
-                                                          // Recorre los datos de "actualidad" y crea elementos li para cada uno
+    actualidad.forEach(element => {                       // Recorre los datos de "actualidad" y crea elementos li para cada uno
       const li = document.createElement('li');            // Crea li
      
       const elementsDiv = document.createElement('div');  // Crea div
