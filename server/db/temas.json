@@ -1,47 +1,47 @@
 [
     {
         "tema": "Actualidades",
-        "url_imagen": "./imagenes/india.jps",
+        "url_imagen": "./imagenes/india.jpg",
         "titulo": "india"
     },
     {
         "tema": "Actualidades",
-        "url_imagen": "./imagenes/brics.jps",
+        "url_imagen": "./imagenes/brics.jpg",
         "titulo": "brics"
     },
     {
         "tema": "Actualidades",
-        "url_imagen": "./imagenes/river.jps",
+        "url_imagen": "./imagenes/river.jpg",
         "titulo": "river"
     },
     {
         "tema": "Memes",
-        "url_imagen": "./imagenes/violin.jps",
+        "url_imagen": "./imagenes/violin.jpg",
         "titulo": "violin"
     },
     {
         "tema": "Memes",
-        "url_imagen": "./imagenes/bear.jps",
+        "url_imagen": "./imagenes/bear.jpg",
         "titulo": "bear"
     },
     {
         "tema": "Memes",
-        "url_imagen": "./imagenes/cinema.jps",
+        "url_imagen": "./imagenes/cinema.jpg",
         "titulo": "cinema"
     },
     {
         "tema": "Música",
-        "url_imagen": "./imagenes/weeknd.jps",
+        "url_imagen": "./imagenes/weeknd.jpg",
         "titulo": "weeknd"
     },
     {
         "tema": "Música",
-        "url_imagen": "./imagenes/miley.jps",
+        "url_imagen": "./imagenes/miley.jpg",
         "titulo": "miley"
     },
     {
         "tema": "Música",
-        "url_imagen": "./imagenes/beatles.jps",
+        "url_imagen": "./imagenes/beatles.jpg",
         "titulo": "beatles"
     }
 ]

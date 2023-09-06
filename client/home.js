@@ -12,11 +12,11 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
       elementsDiv.classList.add('itemsCategoriasHome');   // Agrega la clase "itemsCategoriasHome" al div
 
       const a = document.createElement('a');              // Crea enlace con imagen, dentro de div
-      a.href = "".url;                                    // Crea el hipervínculo. VER "" si está bien, ya que aún no tengo el hipervínculo.
+      a.href = "#";                                       // Crea el hipervínculo. VER "" si está bien, ya que aún no tengo el hipervínculo.
 
       const img = document.createElement('img');          // Crea img
-      img.src = "imagenes/india.jpg".imagen;              // Agrega src al img
-      img.title = "India launches mission to Sun".titulo; // Agrega el title a img
+      img.src = element.url_imagen;                       // Agrega src al img
+      img.title = element.titulo;                         // Agrega el title a img
       a.appendChild(img);                                 // Agrega la imagen al hipervínculo
       elementsDiv.appendChild(a);                         // Agrega el enlace al div "itemsCategoriasHome"
 
@@ -24,7 +24,7 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
       iconoDiv.classList.add('iconoFavoritar');
 
       const favoritosA = document.createElement('a');     // Crea hipervinculo en div (favoritos)
-      favoritosA.href = "".url;
+      favoritosA.href = "#";
 
       const favoritosImg = document.createElement("img");
       favoritosImg.src = "imagenes/favoritar.png";
@@ -33,7 +33,7 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
       favoritosA.appendChild(favoritosImg);               // Agrega imagen (corazoncito) 
       iconoDiv.appendChild(favoritosA);                   // Agrega el enlace al div "iconoFavoritar"
 
-      li.appendChild(elementsDiv);                           // Agrega los divs creados al elemento li
+      li.appendChild(elementsDiv);                        // Agrega los divs creados al elemento li
       li.appendChild(iconoDiv);
 
       actualidadUL.appendChild(li);                       // Agrega el elemento li al elemento ul

@@ -4,9 +4,9 @@ const { conectarDB, desconectarDB } = require("../db/connection");
 const getAll = async (req, res) => {
     try {
         await conectarDB();
-        const actualidad = await Tema.find({tema: "Actualidad"});
-        const musica = await Tema.find({tema: "Musica"});
-        const meme = await Tema.find({tema: "Meme"});
+        const actualidad = await Tema.find({tema: "Actualidades"});
+        const musica = await Tema.find({tema: "Música"});
+        const meme = await Tema.find({tema: "Memes"});
 
         res.json({ actualidad, musica, meme });
     } catch (error) {
