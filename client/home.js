@@ -1,10 +1,14 @@
 const actualidadUL = document.getElementById("actualidadJs"); // linkea js y html
+const memeUL = document.getElementById("memeJs"); 
+const musicaUL = document.getElementById("musicaJs"); 
+
 
 fetch("/api/temas")                                       // Solicitud Fetch al API para obtener los datos:
   .then(response => response.json())
   .then(data => {
-    const { actualidad, musica, meme } = data;
+    const { actualidad, meme, musica } = data;
 
+    // HTML de ACTUALIDADES: 
     actualidad.forEach(element => {                       // Recorre los datos de "actualidad" y crea elementos li para cada uno
       const li = document.createElement('li');            // Crea li
 
@@ -38,5 +42,76 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
 
       actualidadUL.appendChild(li);                       // Agrega el elemento li al elemento ul
     });
+
+    // HTML de MEMES: 
+    meme.forEach(element => {                      
+      const li = document.createElement('li');            
+
+      const elementsDiv = document.createElement('div');  
+      elementsDiv.classList.add('itemsCategoriasHome');   
+
+      const a = document.createElement('a');              
+      a.href = "#";                                       
+
+      const img = document.createElement('img');          
+      img.src = element.url_imagen;                       
+      img.title = element.titulo;                         
+      a.appendChild(img);                                 
+      elementsDiv.appendChild(a);                         
+
+      const iconoDiv = document.createElement('div');     
+      iconoDiv.classList.add('iconoFavoritar');
+
+      const favoritosA = document.createElement('a');     
+      favoritosA.href = "#";
+
+      const favoritosImg = document.createElement("img");
+      favoritosImg.src = "imagenes/favoritar.png";
+      favoritosImg.classList.add("iconos");
+
+      favoritosA.appendChild(favoritosImg);               
+      iconoDiv.appendChild(favoritosA);                   
+
+      li.appendChild(elementsDiv);                        
+      li.appendChild(iconoDiv);
+
+      memeUL.appendChild(li);                       
+    });
+
+    // HTML de MEMES: 
+    musica.forEach(element => {                     
+      const li = document.createElement('li');      
+
+      const elementsDiv = document.createElement('div'); 
+      elementsDiv.classList.add('itemsCategoriasHome');  
+
+      const a = document.createElement('a');             
+      a.href = "#";                                      
+
+      const img = document.createElement('img');         
+      img.src = element.url_imagen;                      
+      img.title = element.titulo;                        
+      a.appendChild(img);                                
+      elementsDiv.appendChild(a);                        
+
+      const iconoDiv = document.createElement('div');    
+      iconoDiv.classList.add('iconoFavoritar');
+
+      const favoritosA = document.createElement('a');    
+      favoritosA.href = "#";
+
+      const favoritosImg = document.createElement("img");
+      favoritosImg.src = "imagenes/favoritar.png";
+      favoritosImg.classList.add("iconos");
+
+      favoritosA.appendChild(favoritosImg);              
+      iconoDiv.appendChild(favoritosA);                  
+
+      li.appendChild(elementsDiv);                       
+      li.appendChild(iconoDiv);
+
+      musicaUL.appendChild(li);                       
+    });
+
   })
   .catch(error => console.log(error));

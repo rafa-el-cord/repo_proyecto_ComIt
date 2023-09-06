@@ -104,6 +104,24 @@ footer ul {
     align-items: center;
 }
 
+.perfilData {                 /* creado para el ul datos usuario */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.perfilData li {             /* creado para el ul datos usuario */
+    padding: 10px 0px;
+}
+
+.perfilCajas {
+    display: flex;
+    flex-wrap: wrap;
+}
+.perfilCajas section {
+    min-width: 400px;
+}
+
 .iconoHome {
     display: flex;
     max-width: 50px;
