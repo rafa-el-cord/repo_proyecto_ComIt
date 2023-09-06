@@ -12,58 +12,37 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
       elementsDiv.classList.add('itemsCategoriasHome');   // Agrega la clase "itemsCategoriasHome" al div
       
       const a = document.createElement('a');              // Crea enlace con imagen, dentro de div
-      a.href = "".url                                     // Crea el hipervínculo. VER "" si está bien, ya que aún no tengo el hipervínculo.
+      a.href = "".url;                                    // Crea el hipervínculo. VER "" si está bien, ya que aún no tengo el hipervínculo.
       
       const img = document.createElement('img');          // Crea img
       img.src = "imagenes/india.jpg".imagen;              // Agrega src al img
       img.title = "India launches mission to Sun".titulo; // Agrega el title a img
       a.appendChild(img);                                 // Agrega la imagen al hipervínculo
-      itemsDiv.appendChild(a);                            // Agrega el enlace al div "itemsCategoriasHome"
+      elementsDiv.appendChild(a);                         // Agrega el enlace al div "itemsCategoriasHome"
 
-
-      li.innerText = ;
-      ulElement.appendChild(li);
-    });
-
-
-  })
-  .catch(error => console.log(error));
-
-
-/* código 
-          
-
-      // Crea un div con la clase "iconoFavoritar"
-      const iconoDiv = document.createElement('div');
+      const iconoDiv = document.createElement('div');     // Crea un div con la clase "iconoFavoritar"
       iconoDiv.classList.add('iconoFavoritar');
 
-      // Crea un enlace dentro del div con la imagen de favoritos
-      const favoritosA = document.createElement('a');
-      favoritosA.href = ''; // Reemplaza con la URL correcta
+      const favoritosA = document.createElement('a');     // Crea hipervinculo en div (favoritos)
+      favoritosA.href = "".url;                                
+
+      const favoritosImg = document.createElement("img");
+      favoritosImg.src = "imagenes/favoritar.png";
+      favoritosImg.classList.add("iconos");
+ 
+      favoritosA.appendChild(favoritosImg);               // Agrega imagen (corazoncito) 
+      favoritosA.href = "";                               // Crea hipervinculo en div (favoritos)
+      
       const favoritosImg = document.createElement('img');
-      favoritosImg.src = 'imagenes/favoritar.png'; // Reemplaza con la URL correcta
+      favoritosImg.src = 'imagenes/favoritar.png'; 
       favoritosImg.classList.add('iconos');
+      favoritosA.appendChild(favoritosImg);               // Agrega la imagen de favoritos al enlace
+      iconoDiv.appendChild(favoritosA);                   // Agrega el enlace al div "iconoFavoritar"
 
-      // Agrega la imagen de favoritos al enlace
-      favoritosA.appendChild(favoritosImg);
-
-      // Agrega el enlace al div "iconoFavoritar"
-      iconoDiv.appendChild(favoritosA);
-
-      // Agrega los divs creados al elemento li
-      li.appendChild(itemsDiv);
+      li.appendChild(itemsDiv);                           // Agrega los divs creados al elemento li
       li.appendChild(iconoDiv);
 
-      // Agrega el elemento li al elemento ul
-      actualidadUL.appendChild(li);
+      actualidadUL.appendChild(li);                       // Agrega el elemento li al elemento ul
     });
   })
   .catch(error => console.log(error));
-
-
-  Asegúrate de reemplazar las URL y otros valores necesarios dentro del código con los 
-  datos reales que obtienes de tu API. Este código crea dinámicamente los elementos 
-  li, div, y a para cada elemento en la lista "actualidad" y los agrega al elemento ul 
-  con el id "actualidadJs" en tu HTML
-
-*/
