@@ -2,7 +2,6 @@ const actualidadUL = document.getElementById("actualidadJs"); // linkea js y htm
 const memeUL = document.getElementById("memeJs");
 const musicaUL = document.getElementById("musicaJs");
 
-
 fetch("/api/temas")                                       // Solicitud Fetch al API para obtener los datos:
   .then(response => response.json())
   .then(data => {
@@ -26,8 +25,8 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
 
       const iconoDiv = document.createElement('div');     // Crea un div con la clase "iconoFavoritar"
       iconoDiv.classList.add('iconoFavoritar');
-      const favoritosA = document.createElement('a');     // Crea evento click en div (favoritos)
-      favoritosA.addEventListener('click', () => {
+      const favoritosA = document.createElement('a');     
+      favoritosA.addEventListener('click', () => {        // Crea evento click en div (favoritos)
         fetch('/api/favorito', {
           method: 'POST',
           headers: {
@@ -76,6 +75,22 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
         iconoDiv.classList.add('iconoFavoritar');
 
         const favoritosA = document.createElement('a');
+
+        favoritosA.addEventListener('click', () => {
+          fetch('/api/favorito', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              id: "",
+              tema: element.tema,
+              url_imagen: element.url_imagen,
+              titulo: element.titulo,
+            })
+          });
+        });
+ 
         favoritosA.href = "#";
 
         const favoritosImg = document.createElement("img");
@@ -91,7 +106,7 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
         memeUL.appendChild(li);
       });
 
-      // HTML de MEMES: 
+      // HTML de MUSICA: 
       musica.forEach(element => {
         const li = document.createElement('li');
 
@@ -111,6 +126,21 @@ fetch("/api/temas")                                       // Solicitud Fetch al 
         iconoDiv.classList.add('iconoFavoritar');
 
         const favoritosA = document.createElement('a');
+        favoritosA.addEventListener('click', () => {
+          fetch('/api/favorito', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              id: "",
+              tema: element.tema,
+              url_imagen: element.url_imagen,
+              titulo: element.titulo,
+            })
+          });
+        });
+  
         favoritosA.href = "#";
 
         const favoritosImg = document.createElement("img");
