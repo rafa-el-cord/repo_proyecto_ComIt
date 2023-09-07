@@ -1,21 +1,19 @@
 const ulElement = document.getElementById("formJs");
 const formElement = document.getElementById("actualizarFormJs");
 
+/*
 
-let contador = 3;
 
-let usuarios = [
+let usuario = [
     {
-        id: 1,
-        email: "fer@gmail.com",
-        password: "aaaaa"
-    },
-    {
-        id: 2,
-        email: "jose@gmail.com",
-        password: "aaaaa"
+        nombre: "Rafael Cordeiro",
+        apodo: "Rafa",
+        email: "rafaelcordeiroh@gmail.com",
+        telefono: "11 32278363",
+        contraseña: "1234"
     },
 ];
+
 
 usuarios.forEach(function(usuario){
     let li = document.createElement('li');
@@ -54,14 +52,17 @@ formulario.addEventListener('submit', function(event){
 })
 /*
 
-let usuario = [
+let usuarios = [
     {
-        nombre: "Rafael Cordeiro",
-        apodo: "Rafa",
-        email: "rafaelcordeiroh@gmail.com",
-        telefono: "11 32278363",
-        contraseña: "1234"
+        id: 1,
+        email: "fer@gmail.com",
+        password: "aaaaa"
     },
-]
+    {
+        id: 2,
+        email: "jose@gmail.com",
+        password: "aaaaa"
+    },
+];
 
 */
